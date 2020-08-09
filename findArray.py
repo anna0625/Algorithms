@@ -7,7 +7,9 @@ def find(array, x):
 
     return -1
 
-array = list()
+array = [1, 2, 3, 4, 5]
+
+print(f'index : {find(array, 3)}')
 
 def find_recursive(array, x, low_i, high_i):
     if low_i > high_i:
@@ -16,4 +18,6 @@ def find_recursive(array, x, low_i, high_i):
         return low_i
     else:
         return find_recursive(array, x, low_i+1, high_i)
+
+print(f'index : {find(array, 4)}')
 
